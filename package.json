@@ -1,0 +1,11 @@
+{
+  "name": "language-guitar-tablature",
+  "version": "0.1.0",
+  "description": "Guitar Tablature support in Atom",
+  "repository": "?",
+  "license": "All Rights Reserved",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {}
+}

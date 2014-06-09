@@ -1,0 +1,37 @@
+'scopeName': 'source.guitar-tablature'
+'fileTypes': [
+  'gtab'
+]
+'name': 'Guitar Tablature'
+'patterns': [
+                {
+                    'begin':'\\|(?=[-|\\d])'
+                    'end':'\\n'
+                    'name':'tab'
+                    'patterns':[
+                                    {
+                                     'match':'\\|'
+                                     'name':'separator'
+                                    }
+                                    {
+                                     'match':'[-|\\(|\\)]'
+                                     'name':'comment.line'
+                                    }
+                                    {
+                                     'match':'\\\\|\\/|\\(|\\)|x|X|h|H|p|P|b|B|~'
+                                     'name':'constant.technique'
+                                    }
+                                    {
+                                     'match':'\\d+'
+                                     'name':'keyword.fret'
+                                    }
+                    ]
+                }
+                {
+                    'match':'\\s\\(?[A-G][#b]?[(?sus)|(?add)|\\d|\\(|\\)]*\\)?\\s'
+                    'name':'support.chord'
+                }
+
+
+
+        ]
